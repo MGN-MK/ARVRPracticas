@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.easyar.sense": "file:../Assets/EasyAR/com.easyar.sense-4.6.3+3029.cb846598.tgz",
+    "com.easyar.sense": "file:C:/Users/Equipo 24/Documents/GitHub/EasyARSenseUnityPlugin_4.6.3+3029.cb846598/com.easyar.sense-4.6.3+3029.cb846598.tgz",
     "com.unity.collab-proxy": "1.15.13",
     "com.unity.ide.rider": "2.0.7",
     "com.unity.ide.visualstudio": "2.0.14",

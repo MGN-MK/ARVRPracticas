@@ -8,8 +8,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SurfaceTracking.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ImageTracking.unity
     guid: d6a4dcc3616ec924c84b8229ea0b371b
+  - enabled: 1
+    path: Assets/Scenes/ImageTrackingMetro.unity
+    guid: c5dad2629b2ecb942bdb4878baf4f737
   m_configObjects:
     EasyAR.Settings: {fileID: 11400000, guid: f6f638495556a0b448453feee4716e42, type: 2}

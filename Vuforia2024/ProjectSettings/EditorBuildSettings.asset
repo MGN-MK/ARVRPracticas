@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/BarCode.unity
+    guid: c13b84ad142d22c4fbf4d5d3088b31bd
   m_configObjects: {}

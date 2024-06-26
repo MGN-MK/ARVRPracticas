@@ -8,6 +8,7 @@ public class BarcodeManager : MonoBehaviour
     public static BarcodeManager Instance;
     public List<string> History;
     public bool wasDetected = false;
+    public int lastLinkIndex = 0;
 
     private void Awake()
     {
@@ -18,6 +19,18 @@ public class BarcodeManager : MonoBehaviour
         else
         {
             Instance = this;
+        }
+    }
+
+    public void AccessToQRWebSite()
+    {
+        if (History.Count > 0 && lastLinkIndex >= 0 && History[lastLinkIndex] != null)
+        {
+            Application.OpenURL(History[lastLinkIndex]);
+        }
+        else
+        {
+            Debug.Log("Fuera del array o está vacío");
         }
     }
 }

@@ -23,6 +23,16 @@ public class SimpleBarcodeScanner : MonoBehaviour
             {
                 BarcodeManager.Instance.History.Add(mBarcodeBehaviour.InstanceData.Text);
                 BarcodeManager.Instance.wasDetected = true;
+
+                //Revisar si nuestro historial es mayor a 0
+                if(BarcodeManager.Instance.History.Count == 1 )
+                {
+                    BarcodeManager.Instance.lastLinkIndex = 0;
+                }
+                else
+                {
+                    BarcodeManager.Instance.lastLinkIndex++;
+                }
             }
 
             barcodeAsText.text = mBarcodeBehaviour.InstanceData.Text;

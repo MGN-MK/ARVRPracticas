@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class superclase : MonoBehaviour
 {
+    [SerializeField]
     string jugador;
+    [SerializeField]
     string objeto;
+    [SerializeField]
     int velocidad;
+    [SerializeField]
+    enemigoVolador velocidadVertical;
 
-    public void Enemigo()
+    public virtual void Enemigo()
     {
         Debug.Log("Volador");
     }
@@ -20,4 +25,4 @@ public class superclase : MonoBehaviour
     {
         Debug.Log("fin del juego");
     }
-}
+} 

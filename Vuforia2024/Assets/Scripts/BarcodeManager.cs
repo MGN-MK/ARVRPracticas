@@ -56,15 +56,15 @@ public class BarcodeManager : MonoBehaviour
     {
         if (!wasDetected)
         {
-            GoToWebButton.transform.GetChild(0).GetComponent<Button>().interactable = false;
-            GoToWebButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Image>().color = Color.gray;
-            GoToWebButton.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Analizando...";
+            GoToWebButton.transform.GetComponent<Button>().interactable = false;
+            GoToWebButton.transform.GetComponent<UnityEngine.UI.Image>().color = Color.gray;
+            GoToWebButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Analizando...";
         }
         else
         {
-            GoToWebButton.transform.GetChild(0).GetComponent<Button>().interactable = true;
-            GoToWebButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Image>().color = new Color32(245, 56, 85, 255);
-            GoToWebButton.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "ACCEDER";
+            GoToWebButton.transform.GetComponent<Button>().interactable = true;
+            GoToWebButton.transform.GetComponent<UnityEngine.UI.Image>().color = new Color32(245, 56, 85, 255);
+            GoToWebButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "ACCEDER";
         }
     }
 
@@ -96,7 +96,9 @@ public class BarcodeManager : MonoBehaviour
 
             //Hacemos hijo de HistoryContainer al nuevo item
             item.transform.parent = HistoryConteiner.transform;
-            item.transform.localPosition = new Vector3(0, 0, 0);
+            item.GetComponent<RectTransform>().localPosition = Vector3.zero;
+            item.GetComponent<RectTransform>().localScale = Vector3.one;
+            item.GetComponent<RectTransform>().localRotation = Quaternion.Euler(Vector3.zero);
 
             //Activamos que el item fue detectado
             wasDetected = true;

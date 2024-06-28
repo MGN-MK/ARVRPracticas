@@ -211,9 +211,9 @@ GameObject:
   m_Component:
   - component: {fileID: 33857520}
   - component: {fileID: 33857519}
-  - component: {fileID: 33857518}
   - component: {fileID: 33857521}
   - component: {fileID: 33857522}
+  - component: {fileID: 33857523}
   m_Layer: 0
   m_Name: Barcode
   m_TagString: Untagged
@@ -221,24 +221,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &33857518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33857517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -287086267, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 33857519}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: 
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 33857519}
-  mBarcodeReferencePreview: {fileID: 0}
 --- !u!114 &33857519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,7 +242,7 @@ MonoBehaviour:
   mDetectMultipleBarcodes: 0
   mShowAdvanced: 1
   mShowObservedTypes: 1
-  mPreview: {fileID: 33857518}
+  mPreview: {fileID: 33857523}
 --- !u!4 &33857520
 Transform:
   m_ObjectHideFlags: 0
@@ -305,6 +287,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barcodeAsText: {fileID: 1756594406}
+--- !u!114 &33857523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33857517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -287086267, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 33857519}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: 
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 33857519}
+  mBarcodeReferencePreview: {fileID: 0}
 --- !u!1 &58021730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,7 +1729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2338,7 +2338,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 1
+  m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
